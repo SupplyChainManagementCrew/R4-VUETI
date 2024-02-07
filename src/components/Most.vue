@@ -14,7 +14,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in sortedDb" :key="item.id">
+        <tr v-for="(item, index) in displayedItems" :key="index">
           <td class="border center">{{ item.TransactionDate }}</td>
           <td class="border center multiline">{{ item.Recipient }}</td>
           <td class="border center">{{ item.Item }}</td>
@@ -25,32 +25,20 @@
         </tr>
       </tbody>
     </table>
+    <div class="pagination">
+      <button @click="previousPage" :disabled="currentPage === 0">Previous</button>
+      <span>{{ currentPage + 1 }}</span>
+      <button @click="nextPage" :disabled="currentPage === totalPages - 1">Next</button>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.border {
-  border: 1px solid #ddd; /* 표 선 스타일 및 색상 설정 */
-  padding: 8px; /* 내부 여백 추가 */
-}
-
-.multiline {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.center {
-  text-align: center; /* 가운데 정렬 설정 */
-}
-</style>
-
-
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 
-const searchQuery = ref(''); // 양방향 검색 담을 그릇
-const db = ref([]); // json 값 담을 그릇
+const itemsPerPage = 5;
+const currentPage = ref(0);
+const db = ref([]);
 const sortedDb = ref([]);
 
 async function fetchData() {
@@ -65,19 +53,16 @@ function calculateTotalValue(item) {
   return totalValue;
 }
 
-// totalValue를 기준으로 내림차순 정렬
 function sortDbByTotalValue() {
   sortedDb.value = [...db.value].sort((a, b) => {
     return calculateTotalValue(b) - calculateTotalValue(a);
   });
 
-  // 정렬된 배열에 totalValue를 추가하여 화면 갱신 트리거
   sortedDb.value.forEach(item => {
     item.totalValue = calculateTotalValue(item);
   });
 }
 
-// Intl.NumberFormat을 사용하여 통화 형식으로 변환
 function formatCurrency(amount) {
   return new Intl.NumberFormat('ko-KR', {
     style: 'currency',
@@ -88,4 +73,45 @@ function formatCurrency(amount) {
 onMounted(() => {
   fetchData();
 });
+
+const totalPages = computed(() => Math.ceil(sortedDb.value.length / itemsPerPage));
+
+const displayedItems = computed(() => {
+  const startIndex = currentPage.value * itemsPerPage;
+  return sortedDb.value.slice(startIndex, startIndex + itemsPerPage);
+});
+
+function nextPage() {
+  currentPage.value++;
+}
+
+function previousPage() {
+  currentPage.value--;
+}
 </script>
+
+<style scoped>
+.border {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.multiline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
 <table style="border:1px">
     <!-- 날짜를 기준으로 항목들을 그룹화하여 순회 -->
-    <div v-for="(group, date) in groupedPosts" :key="date">
+    <div v-for="(group, date) in sortedGroupedPosts" :key="date">
       <h3>{{ date }}</h3>
       <!-- 각 그룹에 속한 항목들을 출력 -->
       <ul>
@@ -55,6 +55,16 @@ if (!postsDb.value) return {};
 	grouped[date].push(item);
   }
   return grouped;
+});
+
+const sortedGroupedPosts = computed(() => {
+  const sortedGrouped = {};
+  Object.keys(groupedPosts.value)
+    .sort()
+    .forEach((date) => {
+      sortedGrouped[date] = groupedPosts.value[date];
+    });
+  return sortedGrouped;
 });
 
 // const fetchData = async () => {
