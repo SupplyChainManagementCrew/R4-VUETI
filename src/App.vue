@@ -1,27 +1,37 @@
 <template>
-  <v-app>
-    <v-main>
-      <v-container>
-        <v-row>
-          <v-col cols="12" sm="4">
-            <graphMs/>
-          </v-col>
-          <v-col cols="12" sm="4">
-            <Most/>
-          </v-col>
-          <v-col cols="12" sm="4">
-            <Comparison />
-          </v-col>
-          <v-col cols="12" sm="6">
-            <orderinfo/>
-          </v-col>
-          <v-col cols="12" sm="6">
-            <Delivery/>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
-  </v-app>
+  <v-container class="bg-surface-variant">
+    <v-row no-gutters>
+      <v-col>
+        <v-sheet class="pa-2 ma-2">
+          <graphMs />
+        </v-sheet>
+      </v-col>
+      <v-col>
+        <v-sheet class="pa-2 ma-2">
+         <Most/>
+        </v-sheet>
+      </v-col>
+            <v-col>
+        <v-sheet class="pa-2 ma-2">
+           <Comparison/>
+        </v-sheet>
+      </v-col>
+
+      <v-responsive width="100%"></v-responsive>
+
+      <v-col>
+        <v-sheet class="pa-2 ma-2">
+          <orderinfo/>
+        </v-sheet>
+      </v-col>
+
+      <v-col>
+        <v-sheet class="pa-2 ma-2">
+          <Delivery/>
+        </v-sheet>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
