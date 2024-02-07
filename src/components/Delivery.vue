@@ -75,12 +75,42 @@ const previousPage = () => {
 </script>
 
 <style scoped>
-.pagination {
-  margin-top: 20px;
-  text-align: center;
-}
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
 
-.pagination button {
-  margin: 0 5px;
-}
+  .pagination button {
+    margin: 0 5px;
+  }
+
+  table {
+    width: 100%; /* 표의 너비를 100%로 설정 */
+    margin-top: 20px; /* 표 상단에 여백 추가 */
+    border-collapse: collapse; /* 표 테두리를 합치도록 설정 */
+    text-align: center; /* 표 전체를 가운데 정렬 */
+  }
+
+  th, td {
+    padding: 10px; /* 표 셀에 여백 추가 */
+    border: 1px solid #dddddd; /* 표 셀에 테두리 추가 */
+    text-align: center; /* 표 셀의 내용을 가운데 정렬 */
+  }
+
+  th:nth-child(1) {
+    font-size: 20px; /* 첫 번째 열(배송현황)의 글자 크기를 키움 */
+  }
+
+  th:nth-child(2) {
+    font-size: 20px; /* 두 번째 열(배송주소)의 글자 크기를 키움 */
+  }
+
+  th:nth-child(3) {
+    font-size: 20px; /* 세 번째 열(받는사람)의 글자 크기를 키움 */
+  }
+
+  td {
+    font-size: 18px; /* 나머지 열의 글자 크기를 조절 */
+  }
+
 </style>
