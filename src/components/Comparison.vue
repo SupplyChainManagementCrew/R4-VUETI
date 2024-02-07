@@ -4,11 +4,11 @@
     <table style="border:1px">
       <!-- 날짜를 기준으로 항목들을 그룹화하여 순회 -->
       <div v-for="(group, date) in sortedGroupedPosts" :key="date">
-        <h3>{{ date }}</h3>
+        <h3>{{ date }}</h3><br>
         <!-- 각 그룹에 속한 항목들을 출력 -->
         <ul class="scrollable-list">
           <li class="list-group-db">
-            전체 수량 : {{ getTotalItems(group) }}
+            전체 수량 : {{ getTotalItems(group) }}<br><br>
           </li>
           <li class="list-group-db" v-for="item in group" :key="item.id">
             제품명 : {{ item.Item }}<br> 수  량 : {{ item.SalesQuantity }}
