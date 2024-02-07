@@ -1,0 +1,616 @@
+{ "db" : [
+    {
+        "TransactionDate": "2024-01-22",
+        "Recipient": "최성우",
+        "Item": "아마존 에코 닷",
+        "SalesQuantity": 50,
+        "UnitPrice": 20500
+    },
+    {
+        "TransactionDate": "2024-01-23",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 4K 스트리밍 장치 with 알렉사 음성 리모컨",
+        "SalesQuantity": 30,
+        "UnitPrice": 15750
+    },
+    {
+        "TransactionDate": "2024-01-24",
+        "Recipient": "이현주",
+        "Item": "킨들 페이퍼화이트",
+        "SalesQuantity": 40,
+        "UnitPrice": 18000
+    },
+    {
+        "TransactionDate": "2024-01-25",
+        "Recipient": "이정민",
+        "Item": "링 비디오 도어벨",
+        "SalesQuantity": 25,
+        "UnitPrice": 22300
+    },
+    {
+        "TransactionDate": "2024-01-26",
+        "Recipient": "홍길동",
+        "Item": "블링크 미니",
+        "SalesQuantity": 35,
+        "UnitPrice": 19800
+    },
+    {
+        "TransactionDate": "2024-01-22",
+        "Recipient": "최성우",
+        "Item": "아마존 에코 닷",
+        "SalesQuantity": 50,
+        "UnitPrice": 20500
+    },
+    {
+        "TransactionDate": "2024-01-23",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 4K 스트리밍 장치 with 알렉사 음성 리모컨",
+        "SalesQuantity": 30,
+        "UnitPrice": 15750
+    },
+    {
+        "TransactionDate": "2024-01-24",
+        "Recipient": "이현주",
+        "Item": "킨들 페이퍼화이트",
+        "SalesQuantity": 40,
+        "UnitPrice": 18000
+    },
+    {
+        "TransactionDate": "2024-01-25",
+        "Recipient": "이정민",
+        "Item": "링 비디오 도어벨",
+        "SalesQuantity": 25,
+        "UnitPrice": 22300
+    },
+    {
+        "TransactionDate": "2024-01-26",
+        "Recipient": "홍길동",
+        "Item": "블링크 미니",
+        "SalesQuantity": 35,
+        "UnitPrice": 19800
+    },
+    {
+        "TransactionDate": "2024-01-22",
+        "Recipient": "최성우",
+        "Item": "아마존 에코 닷",
+        "SalesQuantity": 50,
+        "UnitPrice": 20500
+    },
+    {
+        "TransactionDate": "2024-01-23",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 4K 스트리밍 장치 with 알렉사 음성 리모컨",
+        "SalesQuantity": 30,
+        "UnitPrice": 15750
+    },
+    {
+        "TransactionDate": "2024-01-24",
+        "Recipient": "이현주",
+        "Item": "킨들 페이퍼화이트",
+        "SalesQuantity": 40,
+        "UnitPrice": 18000
+    },
+    {
+        "TransactionDate": "2024-01-25",
+        "Recipient": "이정민",
+        "Item": "링 비디오 도어벨",
+        "SalesQuantity": 25,
+        "UnitPrice": 22300
+    },
+    {
+        "TransactionDate": "2024-01-26",
+        "Recipient": "홍길동",
+        "Item": "블링크 미니",
+        "SalesQuantity": 35,
+        "UnitPrice": 19800
+    },
+    {
+        "TransactionDate": "2024-01-27",
+        "Recipient": "최성우",
+        "Item": "에코 쇼 5 (1세대)",
+        "SalesQuantity": 60,
+        "UnitPrice": 21000
+    },
+    {
+        "TransactionDate": "2024-01-28",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 Lite with 알렉사 음성 리모컨 Lite (TV 제어 불가능) | HD 스트리밍 장치 | 2020 출시",
+        "SalesQuantity": 40,
+        "UnitPrice": 16250
+    },
+    {
+        "TransactionDate": "2024-01-29",
+        "Recipient": "이현주",
+        "Item": "킨들 - 내장형 프론트 라이트 - 블",
+        "SalesQuantity": 35,
+        "UnitPrice": 19000
+    },
+    {
+        "TransactionDate": "2024-01-27",
+        "Recipient": "홍길동",
+        "Item": "에코 쇼 5 (1세대)",
+        "SalesQuantity": 60,
+        "UnitPrice": 21000
+    },
+    {
+        "TransactionDate": "2024-01-28",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 Lite with 알렉사 음성 리모컨 Lite (TV 제어 불가능) | HD 스트리밍 장치 | 2020 출시",
+        "SalesQuantity": 40,
+        "UnitPrice": 16250
+    },
+    {
+        "TransactionDate": "2024-01-29",
+        "Recipient": "이현주",
+        "Item": "킨들 - 내장형 프론트 라이트 - 블랙",
+        "SalesQuantity": 35,
+        "UnitPrice": 19000
+    },
+    {
+        "TransactionDate": "2024-01-30",
+        "Recipient": "이정민",
+        "Item": "링 비디오 도어벨 3 – 향상된 와이파이, 개선된 움직임 감지, 쉬운 설치",
+        "SalesQuantity": 20,
+        "UnitPrice": 23000
+    },
+    {
+        "TransactionDate": "2024-01-31",
+        "Recipient": "홍길동",
+        "Item": "블링크 아웃도어 – 무선, 내구성 있는 HD 보안 카메라, 2년 배터리 수명 및 움직임 감지",
+        "SalesQuantity": 45,
+        "UnitPrice": 19500
+    },
+    {
+        "TransactionDate": "2024-01-27",
+        "Recipient": "홍길동",
+        "Item": "에코 쇼 5 (1세대)",
+        "SalesQuantity": 60,
+        "UnitPrice": 21000
+    },
+    {
+        "TransactionDate": "2024-01-28",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 Lite with 알렉사 음성 리모컨 Lite (TV 제어 불가능) | HD 스트리밍 장치 | 2020 출시",
+        "SalesQuantity": 40,
+        "UnitPrice": 16250
+    },
+    {
+        "TransactionDate": "2024-01-29",
+        "Recipient": "이현주",
+        "Item": "킨들 - 내장형 프론트 라이트 - 블랙",
+        "SalesQuantity": 35,
+        "UnitPrice": 19000
+    },
+    {
+        "TransactionDate": "2024-01-30",
+        "Recipient": "이정민",
+        "Item": "링 비디오 도어벨 3 – 향상된 와이파이, 개선된 움직임 감지, 쉬운 설치",
+        "SalesQuantity": 20,
+        "UnitPrice": 23000
+    },
+    {
+        "TransactionDate": "2024-01-31",
+        "Recipient": "홍길동",
+        "Item": "블링크 아웃도어 – 무선, 내구성 있는 HD 보안 카메라, 2년 배터리 수명 및 움직임 감지",
+        "SalesQuantity": 45,
+        "UnitPrice": 19500
+    },
+    {
+        "TransactionDate": "2024-01-27",
+        "Recipient": "홍길동",
+        "Item": "에코 쇼 5 (1세대)",
+        "SalesQuantity": 60,
+        "UnitPrice": 21000
+    },
+    {
+        "TransactionDate": "2024-01-28",
+        "Recipient": "김미영",
+        "Item": "파이어 TV 스틱 Lite with 알렉사 음성 리모컨 Lite (TV 제어 불가능) | HD 스트리밍 장치 | 2020 출시",
+        "SalesQuantity": 40,
+        "UnitPrice": 16250
+    },
+    {
+        "TransactionDate": "2024-01-29",
+        "Recipient": "이현주",
+        "Item": "킨들 - 내장형 프론트 라이트 - 블랙",
+        "SalesQuantity": 35,
+        "UnitPrice": 19000
+    },
+    {
+        "TransactionDate": "2024-01-30",
+        "Recipient": "이정민",
+        "Item": "링 비디오 도어벨 3 – 향상된 와이파이, 개선된 움직임 감지, 쉬운 설치",
+        "SalesQuantity": 20,
+        "UnitPrice": 23000
+    },
+    {
+        "TransactionDate": "2024-01-31",
+        "Recipient": "홍길동",
+        "Item": "블링크 아웃도어 – 무선, 내구성 있는 HD 보안 카메라, 2년 배터리 수명 및 움직임 감지",
+        "SalesQuantity": 45,
+        "UnitPrice": 19500
+    }
+],
+    "graph": [
+    {
+        "date": "2024-01-22",
+        "revenue": 5000,
+        "sales_quantity": 100,
+        "recipient": "최성우"
+    },
+    {
+        "date": "2024-01-23",
+        "revenue": 7000,
+        "sales_quantity": 120,
+        "recipient": "김미영"
+    },
+    {
+        "date": "2024-01-22",
+        "revenue": 3000,
+        "sales_quantity": 80,
+        "recipient": "이현주"
+    },
+    {
+        "date": "2024-01-24",
+        "revenue": 4200,
+        "sales_quantity": 90,
+        "recipient": "이정민"
+    },
+    {
+        "date": "2024-01-25",
+        "revenue": 5500,
+        "sales_quantity": 110,
+        "recipient": "홍길동"
+    },
+    {
+        "date": "2024-01-22",
+        "revenue": 4800,
+        "sales_quantity": 95,
+        "recipient": "김지수"
+    },
+    {
+        "date": "2024-01-23",
+        "revenue": 6300,
+        "sales_quantity": 130,
+        "recipient": "박준서"
+    },
+    {
+        "date": "2024-01-24",
+        "revenue": 3700,
+        "sales_quantity": 70,
+        "recipient": "김현우"
+    },
+    {
+        "date": "2024-01-25",
+        "revenue": 5900,
+        "sales_quantity": 115,
+        "recipient": "이서연"
+    },
+    {
+        "date": "2024-01-22",
+        "revenue": 6800,
+        "sales_quantity": 140,
+        "recipient": "김영호"
+    },
+    {
+        "date": "2024-01-23",
+        "revenue": 5200,
+        "sales_quantity": 105,
+        "recipient": "이민준"
+    },
+    {
+        "date": "2024-01-24",
+        "revenue": 4500,
+        "sales_quantity": 85,
+        "recipient": "김다현"
+    },
+    {
+        "date": "2024-01-25",
+        "revenue": 3400,
+        "sales_quantity": 75,
+        "recipient": "박영희"
+    },
+    {
+        "date": "2024-01-26",
+        "revenue": 4800,
+        "sales_quantity": 95,
+        "recipient": "김태우"
+    },
+    {
+        "date": "2024-01-27",
+        "revenue": 6300,
+        "sales_quantity": 130,
+        "recipient": "이지아"
+    },
+    {
+        "date": "2024-01-26",
+        "revenue": 3700,
+        "sales_quantity": 70,
+        "recipient": "박민호"
+    },
+    {
+        "date": "2024-01-28",
+        "revenue": 5900,
+        "sales_quantity": 115,
+        "recipient": "김서영"
+    },
+    {
+        "date": "2024-01-29",
+        "revenue": 6800,
+        "sales_quantity": 140,
+        "recipient": "최승현"
+    },
+    {
+        "date": "2024-01-26",
+        "revenue": 5200,
+        "sales_quantity": 105,
+        "recipient": "정지우"
+    },
+    {
+        "date": "2024-01-27",
+        "revenue": 4500,
+        "sales_quantity": 85,
+        "recipient": "이도현"
+    },
+    {
+        "date": "2024-01-28",
+        "revenue": 3400,
+        "sales_quantity": 75,
+        "recipient": "최민지"
+    },
+    {
+        "date": "2024-01-29",
+        "revenue": 5100,
+        "sales_quantity": 100,
+        "recipient": "이지훈"
+    },
+    {
+        "date": "2024-01-26",
+        "revenue": 5900,
+        "sales_quantity": 120,
+        "recipient": "박지민"
+    },
+    {
+        "date": "2024-01-27",
+        "revenue": 5000,
+        "sales_quantity": 100,
+        "recipient": "김태연"
+    },
+    {
+        "date": "2024-01-28",
+        "revenue": 7000,
+        "sales_quantity": 120,
+        "recipient": "이성민"
+    },
+    {
+        "date": "2024-01-29",
+        "revenue": 3000,
+        "sales_quantity": 80,
+        "recipient": "최지수"
+    },
+    {
+        "date": "2024-01-26",
+        "revenue": 4200,
+        "sales_quantity": 90,
+        "recipient": "김서현"
+    },
+    {
+        "date": "2024-01-27",
+        "revenue": 5500,
+        "sales_quantity": 110,
+        "recipient": "박준호"
+    }
+],
+    "pack": [
+    {
+        "recipient_address": "서울특별시 강남구 역삼동",
+        "recipient_phone": "010-1234-5678",
+        "recipient_name": "홍길동",
+        "delivery_schedule_date": "2024-02-10",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 송파구 잠실동",
+        "recipient_phone": "010-2345-6789",
+        "recipient_name": "김철수",
+        "delivery_schedule_date": "2024-02-12",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 강서구 화곡동",
+        "recipient_phone": "010-3456-7890",
+        "recipient_name": "이영희",
+        "delivery_schedule_date": "2024-02-11",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 강동구 천호동",
+        "recipient_phone": "010-4567-8901",
+        "recipient_name": "박민수",
+        "delivery_schedule_date": "2024-02-10",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 종로구 종로동",
+        "recipient_phone": "010-5678-9012",
+        "recipient_name": "이지혜",
+        "delivery_schedule_date": "2024-02-13",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 성북구 성북동",
+        "recipient_phone": "010-6789-0123",
+        "recipient_name": "최영진",
+        "delivery_schedule_date": "2024-02-14",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 노원구 월계동",
+        "recipient_phone": "010-7890-1234",
+        "recipient_name": "김미영",
+        "delivery_schedule_date": "2024-02-12",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 관악구 봉천동",
+        "recipient_phone": "010-8901-2345",
+        "recipient_name": "정태우",
+        "delivery_schedule_date": "2024-02-15",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 동작구 상도동",
+        "recipient_phone": "010-9012-3456",
+        "recipient_name": "한영수",
+        "delivery_schedule_date": "2024-02-10",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 서초구 양재동",
+        "recipient_phone": "010-0123-4567",
+        "recipient_name": "신혜진",
+        "delivery_schedule_date": "2024-02-16",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 중랑구 신내동",
+        "recipient_phone": "010-1234-5678",
+        "recipient_name": "송재우",
+        "delivery_schedule_date": "2024-02-11",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 구로구 구로동",
+        "recipient_phone": "010-2345-6789",
+        "recipient_name": "조현아",
+        "delivery_schedule_date": "2024-02-12",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 강북구 미아동",
+        "recipient_phone": "010-3456-7890",
+        "recipient_name": "류준석",
+        "delivery_schedule_date": "2024-02-13",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 강남구 삼성동",
+        "recipient_phone": "010-4567-8901",
+        "recipient_name": "김하늘",
+        "delivery_schedule_date": "2024-02-14",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 송파구 거여동",
+        "recipient_phone": "010-5678-9012",
+        "recipient_name": "이하늘",
+        "delivery_schedule_date": "2024-02-15",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 강남구 역삼동",
+        "recipient_phone": "010-1111-2222",
+        "recipient_name": "이민호",
+        "delivery_schedule_date": "2024-02-16",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 마포구 서교동",
+        "recipient_phone": "010-2222-3333",
+        "recipient_name": "김수현",
+        "delivery_schedule_date": "2024-02-17",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 강서구 등촌동",
+        "recipient_phone": "010-3333-4444",
+        "recipient_name": "박신혜",
+        "delivery_schedule_date": "2024-02-18",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 강북구 번동",
+        "recipient_phone": "010-4444-5555",
+        "recipient_name": "최민호",
+        "delivery_schedule_date": "2024-02-19",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 강남구 신사동",
+        "recipient_phone": "010-5555-6666",
+        "recipient_name": "이지훈",
+        "delivery_schedule_date": "2024-02-20",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 송파구 가락동",
+        "recipient_phone": "010-6666-7777",
+        "recipient_name": "한지민",
+        "delivery_schedule_date": "2024-02-21",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 성북구 돈암동",
+        "recipient_phone": "010-7777-8888",
+        "recipient_name": "박보검",
+        "delivery_schedule_date": "2024-02-22",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 강서구 방화동",
+        "recipient_phone": "010-8888-9999",
+        "recipient_name": "송혜교",
+        "delivery_schedule_date": "2024-02-23",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 구로구 구로동",
+        "recipient_phone": "010-9999-0000",
+        "recipient_name": "이정재",
+        "delivery_schedule_date": "2024-02-24",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 강남구 청담동",
+        "recipient_phone": "010-0000-1111",
+        "recipient_name": "한가인",
+        "delivery_schedule_date": "2024-02-25",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 강동구 성내동",
+        "recipient_phone": "010-1111-2222",
+        "recipient_name": "송중기",
+        "delivery_schedule_date": "2024-02-26",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 송파구 방이동",
+        "recipient_phone": "010-2222-3333",
+        "recipient_name": "전지현",
+        "delivery_schedule_date": "2024-02-27",
+        "delivery_status": "배송중"
+    },
+    {
+        "recipient_address": "서울특별시 서초구 반포동",
+        "recipient_phone": "010-3333-4444",
+        "recipient_name": "이민정",
+        "delivery_schedule_date": "2024-02-28",
+        "delivery_status": "배송완료"
+    },
+    {
+        "recipient_address": "서울특별시 강남구 압구정동",
+        "recipient_phone": "010-4444-5555",
+        "recipient_name": "박서준",
+        "delivery_schedule_date": "2024-02-29",
+        "delivery_status": "배송준비중"
+    },
+    {
+        "recipient_address": "서울특별시 종로구 인사동",
+        "recipient_phone": "010-5555-6666",
+        "recipient_name": "신민아",
+        "delivery_schedule_date": "2024-03-01",
+        "delivery_status": "배송중"
+    }
+]
+}

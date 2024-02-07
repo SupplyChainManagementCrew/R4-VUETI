@@ -1,4 +1,7 @@
 {
+  "functions": {
+  "source": "."
+  },
   "hosting": {
     "public": "docs",
     "ignore": [
