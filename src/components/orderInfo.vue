@@ -38,21 +38,21 @@ const filteredData = computed(() => {
             <option value="pr">제품</option>
         </select>
     </div><br>
-    <div>
-        <table border="1">
+    <div style="text-align: center; white-space: nowrap;">
+        <table border="1" style="margin: auto; width: 80%;"> <!-- 테이블 전체 너비 조절 -->
             <tr>
-                <th>거래 날짜</th>
-                <th>구매자</th>
-                <th>물품</th>
-                <th>판매 개수</th>
-                <th>단가</th>
+                <th style="padding: 10px;">거래 날짜</th>
+                <th style="padding: 10px;">구매자</th>
+                <th style="padding: 10px;">물품</th>
+                <th style="padding: 10px;">판매 개수</th>
+                <th style="padding: 10px;">단가</th>
             </tr>
             <tr v-for="item in filteredData" :key="item.id">
-                <td>{{ item.TransactionDate }}</td>
-                <td>{{ item.Recipient }}</td>
-                <td>{{ item.Item }}</td>
-                <td>{{ item.SalesQuantity }}</td>
-                <td>{{ item.UnitPrice }}</td>
+                <td style="padding: 10px;">{{ item.TransactionDate }}</td>
+                <td style="padding: 10px;">{{ item.Recipient }}</td>
+                <td style="padding: 10px;">{{ item.Item }}</td>
+                <td style="padding: 10px;">{{ item.SalesQuantity }}</td>
+                <td style="padding: 10px;">{{ item.UnitPrice }}</td>
             </tr>
         </table>
     </div>
