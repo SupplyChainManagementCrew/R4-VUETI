@@ -1,45 +1,41 @@
 <template>
-
+  <div>
     <h1>배송조회</h1><br>
     <form class="d-flex" role="search">  
-    <input class="form-control me-2" v-model="searchQuery" placeholder="타이틀을 입력하세요" @input="search"/>
+      <input class="form-control me-2" v-model="searchQuery" placeholder="타이틀을 입력하세요" @input="search"/>
     </form><br>
     <table border="1">
-
-        <tr>
-            <th>배송현황</th>
-            <th>배송주소</th>
-            <th>받는사람</th>
-        </tr>
-    <tr class="list-group-item" v-for="post in filteredPosts">
+      <tr>
+        <th>배송현황</th>
+        <th>배송주소</th>
+        <th>받는사람</th>
+      </tr>
+      <tr class="list-group-item" v-for="(post, index) in paginatedPosts" :key="index">
         <td>{{post.delivery_status}}</td>
         <td>{{ post.recipient_address }}</td>
         <td>{{ post.recipient_name }}</td>
-    </tr>
+      </tr>
     </table>
+    <div class="pagination">
+      <button @click="previousPage" :disabled="currentPage === 0">Previous</button>
+      <span>{{ currentPage + 1 }}</span>
+      <button @click="nextPage" :disabled="currentPage === totalPages - 1">Next</button>
+    </div>
+  </div>
 </template>
 
-
 <script setup>
-import { ref, onMounted, watch } from 'vue';
-// import axios from 'axios';
+import { ref, onMounted, watch, computed } from 'vue';
 
 const searchQuery = ref(''); //양방향 검색 담을 그릇
 const posts = ref([]); // json 값 담을 그릇
 const filteredPosts = ref([]); // 출력 값 담을 그릇
+const currentPage = ref(0);
 
 async function fetchData() {
-    posts.value = null
-        const res = await fetch(
-                `https://r1-json-server.fly.dev/pack`
-                )
-        posts.value = await res.json()
+  const res = await fetch(`https://r1-json-server.fly.dev/pack`);
+  posts.value = await res.json();
 }
-
-// const fetchData = async () => {
-//   const response = await axios.get(`https://palworld-json-server.fly.dev/posts`);
-//   posts.value = response.data;
-// };
 
 const filterPosts = () => {
   if (searchQuery.value) {
@@ -54,4 +50,37 @@ onMounted(() => {
 });
 
 watch(searchQuery, filterPosts);
+
+const itemsPerPage = 5;
+
+const totalPages = computed(() => Math.ceil(filteredPosts.value.length / itemsPerPage));
+
+const paginatedPosts = computed(() => {
+  const startIndex = currentPage.value * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  return filteredPosts.value.slice(startIndex, endIndex);
+});
+
+const nextPage = () => {
+  if (currentPage.value < totalPages.value - 1) {
+    currentPage.value++;
+  }
+};
+
+const previousPage = () => {
+  if (currentPage.value > 0) {
+    currentPage.value--;
+  }
+};
 </script>
+
+<style scoped>
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+</style>

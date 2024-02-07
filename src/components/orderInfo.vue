@@ -1,9 +1,46 @@
+<template>
+  <div>
+    <div>
+      <input type="text" placeholder="검색어 입력" v-model="searchKeyword">
+      <select name="search" v-model="selectedOption">
+          <option value="">검색선택</option>
+          <option value="cu">구매자</option>
+          <option value="pr">제품</option>
+      </select>
+    </div><br>
+    <div>
+      <table border="1">
+          <tr>
+              <th>거래 날짜</th>
+              <th>구매자</th>
+              <th>물품</th>
+              <th>판매 개수</th>
+              <th>단가</th>
+          </tr>
+          <tr v-for="(item, index) in paginatedData" :key="index">
+              <td>{{ item.TransactionDate }}</td>
+              <td>{{ item.Recipient }}</td>
+              <td>{{ item.Item }}</td>
+              <td>{{ item.SalesQuantity }}</td>
+              <td>{{ item.UnitPrice }}</td>
+          </tr>
+      </table>
+    </div>
+    <div class="pagination">
+      <button @click="previousPage" :disabled="currentPage === 0">Previous</button>
+      <span>{{ currentPage + 1 }}</span>
+      <button @click="nextPage" :disabled="currentPage === totalPages - 1">Next</button>
+    </div>
+  </div>
+</template>
+
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 
 const jsonData = ref([])
 const searchKeyword = ref('')
 const selectedOption = ref('') // 추가: 선택된 옵션을 저장할 변수
+const currentPage = ref(0);
 
 async function fetchData() {
     const response = await fetch("https://r1-json-server.fly.dev/db");
@@ -27,33 +64,39 @@ const filteredData = computed(() => {
         return isMatch;
     });
 });
+
+const itemsPerPage = 5;
+
+const totalPages = computed(() => {
+  return Math.ceil(filteredData.value.length / itemsPerPage);
+});
+
+const paginatedData = computed(() => {
+  const startIndex = currentPage.value * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  return filteredData.value.slice(startIndex, endIndex);
+});
+
+const nextPage = () => {
+  if (currentPage.value < totalPages.value - 1) {
+    currentPage.value++;
+  }
+};
+
+const previousPage = () => {
+  if (currentPage.value > 0) {
+    currentPage.value--;
+  }
+};
 </script>
 
-<template>
-    <div>
-        <input type="text" placeholder="검색어 입력" v-model="searchKeyword">
-        <select name="search" v-model="selectedOption">
-            <option value="">검색선택</option>
-            <option value="cu">구매자</option>
-            <option value="pr">제품</option>
-        </select>
-    </div><br>
-    <div>
-        <table border="1">
-            <tr>
-                <th>거래 날짜</th>
-                <th>구매자</th>
-                <th>물품</th>
-                <th>판매 개수</th>
-                <th>단가</th>
-            </tr>
-            <tr v-for="item in filteredData" :key="item.id">
-                <td>{{ item.TransactionDate }}</td>
-                <td>{{ item.Recipient }}</td>
-                <td>{{ item.Item }}</td>
-                <td>{{ item.SalesQuantity }}</td>
-                <td>{{ item.UnitPrice }}</td>
-            </tr>
-        </table>
-    </div>
-</template>
+<style scoped>
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+</style>
