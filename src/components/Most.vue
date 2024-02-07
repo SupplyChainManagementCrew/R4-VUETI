@@ -116,7 +116,9 @@ function previousPage() {
 }
 
 th {
+    padding: 20px;
     font-size: 17px;
+    background-color: #d1cece;
   }
 
 
