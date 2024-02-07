@@ -112,6 +112,7 @@ table {
     border: 1px solid #dddddd;
     font-size: 18px;
     text-align: center;
+    background-color: #d1cece;
   }
 
   td {
