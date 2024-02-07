@@ -75,12 +75,36 @@ const previousPage = () => {
 </script>
 
 <style scoped>
-.pagination {
-  margin-top: 20px;
-  text-align: center;
-}
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
 
-.pagination button {
-  margin: 0 5px;
-}
+  .pagination button {
+    margin: 0 5px;
+  }
+
+  table {
+    width: 100%; /* 표의 너비를 100%로 설정 */
+    margin-top: 20px; /* 표 상단에 여백 추가 */
+    border-collapse: collapse; /* 표 테두리를 합치도록 설정 */
+    text-align: center; /* 표 전체를 가운데 정렬 */
+  }
+
+  th, td {
+    padding: 10px; /* 표 셀에 여백 추가 */
+    border: 1px solid #dddddd; /* 표 셀에 테두리 추가 */
+    text-align: center; /* 표 셀의 내용을 가운데 정렬 */
+  }
+  
+  th {
+    padding: 15px;
+    font-size: 17px;
+    background-color: #d1cece;
+  }
+
+  td {
+    font-size: 15px;
+  }
+
 </style>

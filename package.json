@@ -1,6 +1,6 @@
 {
   "name": "R4-VUETI",
-  "version": "0.0.0",
+  "version": "0.3.1",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--no-warnings' vite",
     "build": "vite build",
