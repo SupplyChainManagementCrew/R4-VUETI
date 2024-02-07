@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>최다 판매 상품</h2>
+    <h2>최다 판매 상품</h2><br>
     <table>
       <thead>
         <tr>

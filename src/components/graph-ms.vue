@@ -1,5 +1,6 @@
 <template> 
   <div>
+    <h2>매출 비교 그래프</h2><br>
     <canvas id="myChart" width="400" height="400"></canvas>
   </div>
   <!-- <div>

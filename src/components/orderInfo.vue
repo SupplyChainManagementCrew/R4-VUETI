@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>주문 목록</h2><br>
     <div>
       <input type="text" placeholder="검색어 입력" v-model="searchKeyword">
       <select name="search" v-model="selectedOption">

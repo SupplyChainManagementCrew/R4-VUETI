@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>배송조회</h1><br>
+    <h2>배송 조회</h2><br>
     <form class="d-flex" role="search">  
       <input class="form-control me-2" v-model="searchQuery" placeholder="타이틀을 입력하세요" @input="search"/>
     </form><br>
