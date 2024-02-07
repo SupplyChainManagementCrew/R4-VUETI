@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Most Sold Product</h2>
+    <h2>최다 판매 상품</h2>
     <table>
       <thead>
         <tr>
@@ -114,4 +114,10 @@ function previousPage() {
 .pagination button {
   margin: 0 5px;
 }
+
+th {
+    font-size: 17px;
+  }
+
+
 </style>

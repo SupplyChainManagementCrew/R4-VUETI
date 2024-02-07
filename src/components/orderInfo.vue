@@ -21,8 +21,8 @@
             <td class="center nowrap">{{ item.TransactionDate }}</td>
             <td class="center nowrap">{{ item.Recipient }}</td>
             <td class="center">{{ item.Item }}</td>
-            <td class="center nowrap">{{ item.SalesQuantity }}</td>
-            <td class="center nowrap">{{ item.UnitPrice }}</td>
+            <td class="center nowrap">{{ item.SalesQuantity }}개</td>
+            <td class="center nowrap">{{ item.UnitPrice }}원</td>
         </tr>
       </table>
     </div>
@@ -99,6 +99,26 @@ const previousPage = () => {
 .pagination button {
   margin: 0 5px;
 }
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: center;
+  }
 
 .table-row {
   margin-bottom: 20px; /* 행 사이의 아래 여백 설정 */
