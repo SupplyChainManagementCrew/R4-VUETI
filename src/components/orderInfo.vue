@@ -10,20 +10,20 @@
     </div><br>
     <div>
       <table border="1">
-          <tr>
-              <th>거래 날짜</th>
-              <th>구매자</th>
-              <th>물품</th>
-              <th>판매 개수</th>
-              <th>단가</th>
-          </tr>
-          <tr v-for="(item, index) in paginatedData" :key="index">
-              <td>{{ item.TransactionDate }}</td>
-              <td>{{ item.Recipient }}</td>
-              <td>{{ item.Item }}</td>
-              <td>{{ item.SalesQuantity }}</td>
-              <td>{{ item.UnitPrice }}</td>
-          </tr>
+        <tr>
+          <th class="center nowrap" style="min-width: 120px;">거래 날짜</th>
+          <th class="center nowrap" style="min-width: 100px;">구매자</th>
+          <th class="center nowrap" style="min-width: 150px;">물품</th>
+          <th class="center nowrap" style="min-width: 100px;">판매 개수</th>
+          <th class="center nowrap" style="min-width: 80px;">단가</th>
+        </tr>
+        <tr v-for="(item, index) in paginatedData" :key="index" class="table-row">
+            <td class="center nowrap">{{ item.TransactionDate }}</td>
+            <td class="center nowrap">{{ item.Recipient }}</td>
+            <td class="center">{{ item.Item }}</td>
+            <td class="center nowrap">{{ item.SalesQuantity }}개</td>
+            <td class="center nowrap">{{ item.UnitPrice }}원</td>
+        </tr>
       </table>
     </div>
     <div class="pagination">
@@ -99,4 +99,38 @@ const previousPage = () => {
 .pagination button {
   margin: 0 5px;
 }
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: center;
+  }
+
+.table-row {
+  margin-bottom: 20px; /* 행 사이의 아래 여백 설정 */
+  display: table-row; /* display 속성 설정 */
+}
+
+.center {
+  text-align: center; /* 가운데 정렬 */
+}
+
+.nowrap {
+  white-space: nowrap; /* 줄넘김 없음 */
+}
+
 </style>
