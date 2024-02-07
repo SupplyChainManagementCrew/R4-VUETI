@@ -96,21 +96,15 @@ const previousPage = () => {
     border: 1px solid #dddddd; /* 표 셀에 테두리 추가 */
     text-align: center; /* 표 셀의 내용을 가운데 정렬 */
   }
-
-  th:nth-child(1) {
-    font-size: 20px; /* 첫 번째 열(배송현황)의 글자 크기를 키움 */
-  }
-
-  th:nth-child(2) {
-    font-size: 20px; /* 두 번째 열(배송주소)의 글자 크기를 키움 */
-  }
-
-  th:nth-child(3) {
-    font-size: 20px; /* 세 번째 열(받는사람)의 글자 크기를 키움 */
+  
+  th {
+    padding: 15px;
+    font-size: 17px;
+    background-color: #d1cece;
   }
 
   td {
-    font-size: 18px; /* 나머지 열의 글자 크기를 조절 */
+    font-size: 15px;
   }
 
 </style>
