@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "chart.js": "^4.4.1",
+    "chartjs": "^0.3.24",
     "roboto-fontface": "*",
     "vue": "^3.3.0",
     "vuetify": "^3.0.0"
