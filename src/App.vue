@@ -1,5 +1,5 @@
 <template>
-  <v-container class="bg-surface-variant">
+  <v-container class="custom-background">
     <v-row no-gutters>
       <v-col>
         <v-sheet class="pa-2 ma-2">
@@ -33,6 +33,13 @@
     </v-row>
   </v-container>
 </template>
+
+<style>
+.custom-background {
+  background-color: #ffffff; /* Replace with your desired background color */
+}
+</style>
+
 
 <script>
 import Delivery from './components/Delivery.vue'
